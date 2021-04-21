@@ -26,3 +26,11 @@ html, body {
     border: .5px solid rgb(41, 40, 40);
     
 }
+
+.black {
+    background-color: black;
+} 
+
+/*.small-div:hover {
+    background-color: black;
+}

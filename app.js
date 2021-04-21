@@ -11,7 +11,14 @@ function createSquare() {
             small_div = document.createElement('div');
             small_div.classList.add('small-div')
             div.appendChild(small_div);
+            small_div.addEventListener('mouseenter', (e) => {
+                e.target.style.background = 'black';
+            });
+
         }
 
     }
 }
+
+createSquare();
+
