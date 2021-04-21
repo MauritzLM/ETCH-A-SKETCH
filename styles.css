@@ -3,27 +3,26 @@ html, body {
 }
 
 .container {
-    height: 280px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 280px;
-    border: 1px solid black;
+    display: grid;
+    width: 960px;
+    height: 960px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    
     
 }
 
 .medium-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(4, 25%);   
+    grid-template-rows: repeat(4, 25%);
     border: .8px solid grey;
-    width: 64px;
-    height: 64px;
-    padding-top: 1px;
+    
+    
 }
 
 .small-div {
-    border: .5px solid blue;
-    width: 12px;
-    height: 12px;
+    border: .5px solid rgb(41, 40, 40);
+    
 }
