@@ -10,16 +10,14 @@ function createSquare(num) {
         div = document.createElement('div');
         div.classList.add('medium-div');
         mainDiv.appendChild(div);
+        mainDiv.style.gridTemplateColumns = `repeat(${num}, 1fr`;
         for (let j = 0; j < num; j++) {
             small_div = document.createElement('div');
             small_div.classList.add('small-div')
             div.appendChild(small_div);
-            small_div.addEventListener('mouseenter', (e) => {
-                e.target.style.backgroundColor = 'black';
-            });
+            small_div.addEventListener('mouseenter', randColor);
 
         }
-
     }
 }
 
@@ -36,5 +34,15 @@ button.addEventListener('click', (e) => {
 
 function inputSquares(num) {
     num = parseInt(prompt('How many squares per side? '));
+    if (num > 100) {
+        num = parseInt(prompt('Enter a number less than 100'))
+    }
     createSquare(num)
+}
+
+function randColor(e) {
+    const r = Math.floor(Math.random() * 265);
+    const g = Math.floor(Math.random() * 265);
+    const b = Math.floor(Math.random() * 265);
+    e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }

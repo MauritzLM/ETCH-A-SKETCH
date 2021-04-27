@@ -1,36 +1,20 @@
-html, body {
-    height: 100%;
-}
-
 .container {
     display: grid;
     width: 960px;
     height: 960px;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, 25%);
+    border: 1px solid black;
+  
     
     
 }
 
 .medium-div {
-    display: grid;
-    width: auto;
-    grid-template-columns: repeat(4, 25%);   
-    grid-template-rows: repeat(4, 25%);
-    border: .8px solid grey;
-    
-    
-}
-
-.small-div {
-    border: .5px solid rgb(41, 40, 40);
-    
-}
-
-.black {
-    background-color: black;
+    display: grid;        
 } 
 
-/*.small-div:hover {
-    background-color: black;
+.small-div {
+    border: .1em solid rgb(41, 40, 40);
+    
 }
+
+
